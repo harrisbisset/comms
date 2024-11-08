@@ -1,0 +1,14 @@
+enum OrderType {
+    BUY = 0;
+    SELL = 1;
+    CANCEL = 2;
+}
+
+message ProtoOrder {
+    required string user_id = 1;
+    required string user_order_id = 2;
+    required OrderType order_type = 3;
+    required string symbol = 4;
+    required int64 limit_price = 5;
+    required int64 quantity = 6;
+}
