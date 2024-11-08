@@ -1,6 +1,0 @@
-(library
- (name test_comms)
- (libraries server)
- (inline_tests)
- (preprocess
-  (pps ppx_inline_test ppx_assert ppx_let)))

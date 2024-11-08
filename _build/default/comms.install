@@ -1,8 +1,0 @@
-lib: [
-  "_build/install/default/lib/comms/META"
-  "_build/install/default/lib/comms/dune-package"
-  "_build/install/default/lib/comms/opam"
-]
-bin: [
-  "_build/install/default/bin/comms"
-]
