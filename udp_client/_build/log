@@ -1,6 +1,22 @@
-# dune init proj udp_client
+# dune fmt
 # OCAMLPARAM: unset
 # Shared cache: disabled
 # Shared cache location: /root/.cache/dune/db
-# Workspace root: /root/ocaml/udp_server/udp_client
+# Workspace root: /root/ocaml/comms/udp_client
 # Auto-detected concurrency: 16
+# Dune context:
+#  { name = "default"
+#  ; kind = "default"
+#  ; profile = Dev
+#  ; merlin = true
+#  ; fdo_target_exe = None
+#  ; build_dir = In_build_dir "default"
+#  ; instrument_with = []
+#  }
+$ /root/.opam/default/bin/ocamlc.opt -config > /tmp/dune_e0b5e9_output
+$ (cd _build/default && /root/.opam/default/bin/ocamlformat --impl bin/main.ml) > _build/default/bin/.formatted/main.ml
+> File "bin/main.ml", line 1:
+> Warning: Ocamlformat disabled because [--enable-outside-detected-project] is not set and no [.ocamlformat] was found within the project (root: ../../../udp_client)
+$ (cd _build/default && /root/.opam/default/bin/ocamlformat --impl test/test_udp_client.ml) > _build/default/test/.formatted/test_udp_client.ml
+> File "test/test_udp_client.ml", line 1:
+> Warning: Ocamlformat disabled because [--enable-outside-detected-project] is not set and no [.ocamlformat] was found within the project (root: ../../../udp_client)
