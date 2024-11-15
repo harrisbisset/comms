@@ -1,0 +1,6 @@
+# dune init proj udp_client
+# OCAMLPARAM: unset
+# Shared cache: disabled
+# Shared cache location: /root/.cache/dune/db
+# Workspace root: /root/ocaml/udp_server/udp_client
+# Auto-detected concurrency: 16

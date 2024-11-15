@@ -1,4 +1,4 @@
 (executable
- (public_name comms)
+ (public_name udp_server)
  (name main)
  (libraries logs server))

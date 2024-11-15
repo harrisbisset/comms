@@ -1,5 +1,5 @@
 (library
- (name test_comms)
+ (name test_udp_server)
  (libraries server)
  (inline_tests)
  (preprocess
