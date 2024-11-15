@@ -1,4 +1,4 @@
 (executable
  (public_name udp_client)
  (name main)
- (libraries udp_client))
+ (libraries unix lwt.unix logs.lwt pbrt))
